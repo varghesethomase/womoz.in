@@ -1,3 +1,4 @@
+
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -9,9 +10,20 @@ body{
     font-family: Quadon;
     src: url("../fonts/QuadonMedium.otf");
 }
+.thin-strip{
+	width:100%;
+	height:3px;
+	background-color:#fff;
+	position:fixed;
+	top:0px;
+	z-index: 9999;
+
+}
 #tabzilla{
 	right:15%;
 	z-index: 10000;
+	position:fixed;
+	top:3px;
 }
 .full-width{
 	min-width:100%;
@@ -20,7 +32,8 @@ body{
 	
 }
 .landing-div{
-	background: url(../img/landing1.jpg) repeat scroll center center / cover transparent;
+	background: url(../img/landing1.jpg) no-repeat scroll center center / cover transparent;
+	background-color:#000;
 	width:100vw;
 	height:100vh;
 	position:relative;
@@ -76,7 +89,8 @@ section{
 }
 #section-3{
 	height:400px;
-	background: url(../img/landing.jpg) repeat scroll center center / cover transparent;
+	background: url(../img/landing.jpg) no-repeat scroll center center / cover transparent;
+	background-color: #100B0A;
 }
 .subscribe{
 	padding-top:60px;
@@ -158,4 +172,25 @@ footer .medium-6{
 footer ul a{
 	font-size:12px;
 
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+@media only screen and (max-width: 40em){
+	.womoz-title{
+		top:50px;
+	}
+	.womoz-title span{
+		font-size:40px;
+	}
+	.subscribe-form form input[type="submit"]{
+		margin-top:20px;
+		width:40%;
+		margin-left:30%;
+		margin-left:30%;
+	}
+	footer .medium-6{
+		padding-top:15px;
+	}
 }
